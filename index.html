@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Documento game</title>
+</head>
+
+<body>
+ <form>
+   <div class="texto"><img src="texto.jpeg"></div>
+   <ul>imagens</ul>
+   <div class="pagina">
+     <div class="obj">.<img src="imgs.jpeg"></div>
+     <div class="obj">.<img src="seg.jpeg"></div>
+     <div class="obj">.<img src="ter.jpeg"></div>
+     <div class="obj">.<img src="qua.jpeg"></div>
+     <div class="obj">.<img src="qui.jpeg"></div>
+   </div>
+   <h2>comentário</h2>
+   <input placeholder="comentar" type="text"><button onclick="alerta()">Enviar</button>
+   <div class="docu">
+     <div class="painel"><u><h2>documentos</h2></u><i></div>
+     
+   </div>
+   <li>OBS:segure na imagem para fazer download </li><br>
+   <li>pegar imagens</li><br>
+   <u><h2>passe no canal do *****</h2></u>
+   <div class="b">
+     <button><a href="http://localhost:7700/wats.html">whats</a></button>
+   </div>
+ </form>
+   
+ <script>
+   function alerta(){
+     alert("enviado")
+   }
+ </script>
+</body>
+<style>
+  *{
+  margin:0;
+  padding: 0;
+}
+body{
+  background: url("images.jpeg");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(20px);
+}
+h2{
+  color:#fff;
+}
+.pagina{
+  
+}
+.obj{
+  background: skyblue;
+  margin: 13px;
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 200px 200px;
+  border-radius: 10px;
+}
+img{
+  border-radius: 10px;
+  margin-left: -200px;
+  height: 200px;
+  width: 385px;
+  border:3px solid #fff;
+}
+.texto{
+  backdrop-filter: blur(30px);
+  background:green;
+  height: 100px;
+  text-align: center;
+  font-size: 60px;
+  color:#fff;
+  border-radius:10px;
+  border:3px solid #fff;
+}
+li{
+  color:#fff;
+}
+.painel{
+  
+ margin-left: 120px;
+ font-size: 20px;
+}
+input{
+  outline: none;
+  background: #A7A7A7;
+  color:#fff;
+  height: 40px;
+}
+button{
+  background: #974CF1;
+  height: 45px;
+  width: 100px;
+  color:#fff;
+  
+}
+.texto img{
+  border:none;
+  align-items: center;
+  height: 100px;
+  width: 405px;
+  margin-left: 1px;
+  
+}
+ul{
+  text-align: center;
+  color:#fff;
+  margin-top: -10px;
+  font-size: 60px;
+  background: #5B62AD;
+  border:3px solid blanchedalmond;
+}
+.b button{
+  margin-left: 150px;
+  background: green;
+  border-radius: 10px;
+ 
+}
+.b a{
+  color:#fff;
+  font-size: 18px;
+}
+</style>
+
+</html>
